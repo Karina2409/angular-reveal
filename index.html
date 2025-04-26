@@ -108,7 +108,17 @@
           </code></pre>
         </ol>
       </section>
-
+      <section>
+        <h2 style="margin-bottom: 50px; color: var(--r-link-color)">Routing</h2>
+        <pre><code data-trim class="language-ts" data-line-numbers="1-6|4|5">
+          const routes: Routes = [
+            { path: 'first-component', component: FirstComponent },
+            { path: 'second-component', component: SecondComponent },
+            { path: '',   redirectTo: '/first-component', pathMatch: 'full' },
+            { path: '**', component: PageNotFoundComponent },
+          ];
+        </code></pre>
+      </section>
     </section>
   </div>
 </div>
